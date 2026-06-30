@@ -3,16 +3,16 @@ import java.util.Random;
 import java.util.Scanner;
 
 /*
- * DecodeLabs  - Project 1: Number Guessing Game
- *
- * Goal: Generate a random number (1-100) and  user guess it,
- * giving "too high" / "too low" feedback until the correct number is found.
- *
- * Features included:
- *  - Limited number of attempts per round
- *  - Multiple rounds (play again loop using do-while)
- *  - Final score tracking across rounds
- *  - Defensive input validation (try-catch for InputMismatchException)
+  DecodeLabs  - Project 1: Number Guessing Game
+ 
+  Goal: Generate a random number (1-100) and  user guess it,
+  giving "too high" / "too low" feedback until the correct number is found.
+ 
+  Features included:
+   - Limited number of attempts per round
+   - Multiple rounds (play again loop using do-while)
+   - Final score tracking across rounds
+   - Defensive input validation (try-catch for InputMismatchException)
  */
 public class DecodeLabs_Java_P1 {
 
@@ -59,8 +59,8 @@ public class DecodeLabs_Java_P1 {
     }
 
     /*
-     * Plays a single round of the guessing game.
-     * Returns true if the player guessed correctly within the attempt limit.
+      Plays a single round of the guessing game.
+      Returns true if the player guessed correctly within the attempt limit.
      */
     private static boolean playRound(Scanner scanner, Random random) {
         // Stochastic Generation: random.nextInt(100) gives 0-99, so +1 shifts
@@ -96,9 +96,9 @@ public class DecodeLabs_Java_P1 {
     }
 
     /*
-     * Stream Capture with defensive input validation.
-     * Keeps asking until the user provides a valid integer guess,
-     * handling InputMismatchException so the program never crashes.
+      Stream Capture with defensive input validation.
+      Keeps asking until the user provides a valid integer guess,
+      handling InputMismatchException so the program never crashes.
      */
     private static int getValidGuess(Scanner scanner, int attemptsUsed, int maxAttempts) {
         while (true) {
@@ -115,8 +115,8 @@ public class DecodeLabs_Java_P1 {
     }
 
     /*
-     * Asks the player if they want to play another round.
-     * Validates the input so only 'y' or 'n' (any case) is accepted.
+      Asks the player if they want to play another round.
+      Validates the input so only 'y' or 'n' (any case) is accepted.
      */
     private static boolean askPlayAgain(Scanner scanner) {
         while (true) {
